@@ -1,7 +1,7 @@
 import sys
 
 def lsum(ls):
-  l, m = len(ls), 0
+  l, m = len(ls), ls[0]
   for i in xrange(l):
     for j in xrange(i+1, l+1):
       m = max(m, sum(ls[i:j]))
